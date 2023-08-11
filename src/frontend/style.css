@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+#chat {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#instructions {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#instructions p {
+    margin: 10px 0;
+}
+
+#messages {
+    height: 300px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user-message {
+    color: #007BFF;
+    background-color: #eaf3ff;
+}
+
+.bot-message {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+#question-form {
+    display: flex;
+    margin-top: 10px;
+}
+
+#question-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+#question-input:focus {
+    outline: none;
+}
+
+#question-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#question-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#reset-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#reset-button:hover {
+    background-color: #a71d2a;
+}
+
+/* We Spinnin! */
+.spinner {
+    display: none;
+    border: 8px solid rgba(255, 255, 255, 0.3);
+    border-top: 8px solid #007BFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with CivicGPT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="instructions">
+        <p>Please be patient while the chatbot loads. It may take a moment.</p>
+        <p>If the application is not responding as expected, you can click the "Reset" button.</p>
+        <p>For more information about the knowledge source, visit <a href="https://github.com/CivicActions/guidebook">https://github.com/CivicActions/guidebook</a></p>
+    </div>
+    <div id="chat">
+        <div id="messages"></div>
+        <form id="question-form">
+            <input type="text" id="question-input" autocomplete="off" placeholder="Type your question here...">
+            <input type="submit" value="Ask">
+
+        </form>
+        <br  />
+        <button id="reset-button">Reset</button>
+        <br  />
+        <div id="spinner" class="spinner"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.9.1/dist/showdown.min.js"></script>
+    <script src="talky.js"></script>
+</body>
+</html>
