@@ -24,7 +24,7 @@ httpx==0.24.1
 idna==3.4
 itsdangerous==2.1.2
 Jinja2==3.1.2
-langchain==0.0.262
+langchain==0.0.312
 langsmith==0.0.21
 llama-hub==0.0.21
 llama-index==0.8.0
